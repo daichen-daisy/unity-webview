@@ -108,6 +108,7 @@ static void UnitySendMessage(
 	webView.hidden = YES;
 	[webView setAutoresizingMask:(NSViewWidthSizable|NSViewHeightSizable)];
 	[webView setPolicyDelegate:self];
+	[webView setDrawsBackground:NO];
 	gameObject = [[NSString stringWithUTF8String:gameObject_] retain];
 
 	return self;

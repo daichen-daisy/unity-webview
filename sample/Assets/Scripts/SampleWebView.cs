@@ -24,6 +24,14 @@ public class SampleWebView : MonoBehaviour
 {
 	public string Url;
 	WebViewObject webViewObject;
+	private bool done = true;
+	
+	public void OnGUI() {
+		if (GUI.Button(new Rect(10, 310, 100, 50), (!done ? "Embed html" : "Remove html"))) {
+			webViewObject.SetVisibility(!done);
+			done = !done;
+		}
+	}
 
 	void Start()
 	{

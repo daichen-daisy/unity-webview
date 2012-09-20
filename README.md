@@ -18,3 +18,6 @@ unity-webview is derived from keijiro-san's unity-webview-integration https://gi
     $ open dist/unity-webview.unitypackage
     Import all files
 
+    ### Test transparency Webview
+        $ Modify Url of SampleWebView in the inspector of sample/Assets/Sample.unity to file://localhost/Users/.../unity-webview/test.html
+

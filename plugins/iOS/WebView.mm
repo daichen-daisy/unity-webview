@@ -40,6 +40,11 @@ extern UIViewController *UnityGetGLViewController();
 	webView = [[UIWebView alloc] initWithFrame:view.frame];
 	webView.delegate = self;
 	webView.hidden = YES;
+	[webView setBackgroundColor:[UIColor clearColor]];
+	[webView setOpaque:NO];
+	webView.scalesPageToFit = NO;
+	webView.userInteractionEnabled = NO;
+	webView.clipsToBounds = YES;
 	[view addSubview:webView];
 	gameObjectName = [[NSString stringWithUTF8String:gameObjectName_] retain];
 

@@ -23,6 +23,7 @@ package net.gree.unitywebview;
 
 import com.unity3d.player.UnityPlayer;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
@@ -70,6 +71,7 @@ public class WebViewPlugin
 			mWebView.setVisibility(View.GONE);
 			mWebView.setFocusable(true);
 			mWebView.setFocusableInTouchMode(true);
+			mWebView.setBackgroundColor(Color.argb(0, 255, 0, 0));
 
 			if (layout == null) {
 				layout = new FrameLayout(a);
